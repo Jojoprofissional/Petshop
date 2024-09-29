@@ -10,107 +10,134 @@
   </head>
   <body>
     <h1>
-    <nav> 
-      <input type="button" id="botao">
-     <input type="text" name="search" placeholder="Buscar...">
-        <i class="fas fa-magnifying-glass"></i>
-      <ul>
-        <li><a href="#" id = heart ><i class="fa fa-heart"></i> Lista de Desejos</a></li>
-        <li><a href="#"><i class="fa fa-shopping-cart"></i> Carrinho</a></li>
-        <li><a href="#"><i class="fa fa-map-marker"></i> Localização</a></li>
-        <li><a href="#"><i class="fa fa-user"></i> Cadastro/Login</a></li>
-      </ul>
-    </nav>
       
-      <div class="card" >
-  <img src="https://dcdn.mitiendanube.com/stores/002/058/724/products/arranhador-capa1-d2c158b466ffb0f24116729464406414-1024-1024.jpg" alt="Denim Jeans" style="width:100%">
-  <h1 id=big>Arranhado </h1>
-  <p class="price">R$19.99</p>
-  <p>Troque o seu sofa por este arranhador</p>
-  <p><button>Add to Cart</button></p>
-</div>
-           <div class="card">
-  <img src="https://granpetsuzano.com.br/wp-content/uploads/2022/03/ultra-cat-senior.jpg" alt="Denim Jeans" style="width:100%">
-  <h1 id=big>Special ultra </h1>
-  <p class="price">$49.99</p>
-  <p>Para gatos com gostos refinados e saudaveis</p>
-  <p><button>Add to Cart</button></p>
-</div>
-           <div class="card">
-  <img src="https://www.pedigree.com.br/cdn-cgi/image/format=auto,q=90/sites/g/files/fnmzdf2401/files/2022-10/7896029087336-product-image-1.png" alt="Denim Jeans" style="width:100%">
-  <h1 id=big>Raçao pedigree</h1>
-  <p class="price">$19.99</p>
-  <p>Raçao carde para caes adultos</p>
-  <p><button>Add to Cart</button></p>
-</div>
+      <nav>
+        <ul>
+          
+          <li>
+            
+          </li>
+    
+          <li >
+            <input id="search" type="text" placeholder="Search...">
+            <button type="button">Search</button>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
       
-            <div class="card">
-  <img src="https://www.mundomiauauau.com.br/cdn/shop/products/Sa180f0c04e5548c2b7640cfb18599323R.jpg?v=1679575367" alt="Denim Jeans" style="width:100%">
-  <h1 id=big>Tailored Jeans</h1>
-  <p class="price">R$19.99</p>
-  <p>Deixe seu cacho andando que nem gente</p>
-  <p><button>Add to Cart</button></p>
-</div>
-           <div class="card">
-  <img src="https://images.petz.com.br/fotos/1658430805995.jpg" alt="Denim Jeans" style="width:100%">
-  <h1 id=big>Raçao Cachorro dourado</h1>
-  <p class="price">$19.99</p>
-  <p>Raçao perfeita para deixar o cachorro brilhando feito ouro</p>
-  <p><button>Add to Cart</button></p>
-</div>
-           <div class="card">
-  <img src="https://http2.mlstatic.com/D_667744-MLB73277775572_122023-C.jpg" alt="Denim Jeans" style="width:100%">
-  <h1 id=big>Corda boa pra cachorro</h1>
-  <p class="price">R$10.99</p>
-  <p>Corda animal para animais de grande porte.</p>
-  <p><button>Add to Cart</button></p>
-                    </div>
-         
-          <div class="banner">
-        <div class="banner-content">
+              
+          <li class="profile">
+            <a href="#profile">
+              <img src="profile-icon.png" alt="Profile" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    
+      
+
+      <p href="#" id="marca">Logo</p>
+
+
+    
+    <div id="quadrado"></div>
+    <div id="quadrado2"></div>
+    <div id="quadrado3">  </div>
+    <div id="quadrado4"></div>
+    <div id="quadrado5"></div>
+
+   
+        <div id="banner" >
+          </div>
+        
+   
+      <p id="recomendados">Produtos recomendados</p>
+      
+      <div id="produto1">
+        <div class="quadrado" id="sunga">
+
         </div>
-          <div class="banner" >
-            </div>
-     <footer class="rodape" id="contato">
-    <div class="rodape-div">
-           
-        <div class="rodape-div-1">
-            <div class="rodape-div-1-coluna">
-                <!-- elemento -->
-                <span><a href="#"onclick="redirecionarParablog(); return false;">Serviços</a><b>Blog</b></span>
-                <p>SIA Trecho 5 lote 000 bloco z sala 900 - Guará, Brasília - DF, 70000-010</p>
-            </div>
+        <p class="paragrafo" style="font-size: 16px;">Este é um parágrafo com tamanho de fonte normal.</p>
+        <button class=" button1"id="buone"  onclick="transferirImagem1()">Green</button>
+      </div>
+      <div id="produto2">
+        <div class="quadrado" id="raçao">
+          <button class=" button1" id="budois" onclick="transferirImagem()">Green</button>
         </div>
 
-        <div class="rodape-div-2">
-            <div class="rodape-div-2-coluna">
-                <!-- elemento -->
-                <span><b>Contatos</b></span>
-                <p>contato@na.na</p>
-                <p>+55 63 99200-0000</p>
-            </div>
-        </div>
+        <script>
+          function transferirImagem() {
+              const imgUrl = 'https://petshop-2hq6.onrender.com/img/racao-gato2.webp'; // Use a mesma URL aqui
+              localStorage.setItem('imagemTransferida', imgUrl);
+              window.location.href = 'carro.html'; 
+          }
+      </script>
 
-        <div class="rodape-div-3">
-            <div class="rodape-div-3-coluna">
-                <!-- elemento -->redirecionarParaServicos()
-                <span><b>Links</b></span>
-                <p><a href="#"onclick="redirecionarParaServicos(); return false;">Serviços</a></p>
-                <p><a href="#"onclick="redirecionarParafeed(); return false;">Feedback</a></p>
-                <p><a href="#" onclick="redirecionarParaSobre(); return false;">Sobre</a></p>
-            </div>
-        </div>
+<script>
+  function transferirImagem1() {
+      const imgUrl = 'https://petshop-2hq6.onrender.com/img/gato10.webp'; 
+      localStorage.setItem('imagemTransferida1', imgUrl);
+      window.location.href = 'carro.html'; 
+  }
+</script>
 
-        <div class="rodape-div-4">
-            <div class="rodape-div-4-coluna">
-                <!-- elemento -->
-                <span><b>Outros</b></span>
-                <p>Políticas de Privacidade</p>
-            </div>
-        </div>
+<script>
+  function transferirImagem2() {
+      const imgUrl = 'https://petshop-2hq6.onrender.com/img/gato11.webp'; 
+      localStorage.setItem('imagemTransferida2', imgUrl);
+      window.location.href = 'carro.html'; 
+  }
+</script>
 
+<script>
+  function transferirImagem3() {
+      const imgUrl = 'https://petshop-2hq6.onrender.com/img/gato8.webp'; 
+      localStorage.setItem('imagemTransferida3', imgUrl);
+      window.location.href = 'carro.html'; 
+  }
+</script>
+
+
+
+        
+        <p class="paragrafo" style="font-size: 16px;">Este é um parágrafo com tamanho de fonte normal.</p>
     </div>
-    <p class="rodape-direitos">Copyright © 2023 – Todos os Direitos Reservados.</p>
+    
+      <div id="produto3">
+        <div class="quadrado" id="batman"></div>
+        <p class="paragrafo" style="font-size: 16px;">Este é um parágrafo com tamanho de fonte normal.</p>
+        <button class="button1" onclick="transferirImagem2()">Green</button>
+      </div>
+      <div id="produto4">
+        <div class="quadrado" id="calça">
+          <button class=" button1" id="bufour" onclick="transferirImagem3()">Green</button>
+        </div>
+        <p class="paragrafo" style="font-size: 16px;">Este é um parágrafo com tamanho de fonte normal.</p>
+      </div>
+      <div id="produto5">
+        <div class="quadrado" id="coleira">
+          <button class=" button1" id="bufive">Green</button>
+        </div>
+        <p class="paragrafo" style="font-size: 16px;">Este é um parágrafo com tamanho de fonte normal.</p>
+      </div>
+      </div>
+      <div id="produto6">
+        <div class="quadrado" id="roupa">
+      
+        </div>
+        <p class="paragrafo" style="font-size: 16px;">Este é um parágrafo com tamanho de fonte normal.</p>
+        <button class="button1" id="busix">Green</button>
+      </div>  
+          
+     <footer >
+
 </footer>
   </body>
 </html>
@@ -142,3 +169,5 @@
       window.location.href = 'blog.html'; 
   }
 </script>
+
+
