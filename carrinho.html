@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrinho de Compras</title>
+</head>
+<body>
+<h1>Carrinho de Compras</h1>
+
+<ul id="cart"></ul>
+
+<a href="index.html">Voltar para a Loja</a>
+
+<script src="script.js"></script>
+<script>
+// Função para exibir os itens do carrinho na página do carrinho
+function displayCart() {
+  const cart = JSON.parse(localStorage.getItem('cart'));
+  const cartList = document.getElementById('cart');
+
+  // Limpa o conteúdo atual do carrinho
+  cartList.innerHTML = '';
+
+  // Verifica se há itens no carrinho
+  if (cart && cart.length > 0) {
+    // Loop através de cada item do carrinho e adiciona à lista
+    cart.forEach(item => {
+      const cartItem = document.createElement('li');
+
+      const itemImage = document.createElement('img');
+      itemImage.src = item.image;
+      itemImage.alt = item.name;
+      cartItem.appendChild(itemImage);
+
+      const itemName = document.createElement('p');
+      itemName.textContent = item.name;
+      cartItem.appendChild(itemName);
+
+      const itemPrice = document.createElement('p');
+      itemPrice.textContent = item.price;
+      cartItem.appendChild(itemPrice);
+
+      cartList.appendChild(cartItem);
+    });
+  } else {
+    // Se o carrinho estiver vazio, exibe uma mensagem
+    cartList.innerHTML = '<p>Carrinho vazio</p>';
+  }
+}
+
+// Chama a função para exibir os itens do carrinho ao carregar a página
+window.onload = displayCart;
+</script>
+
+
+<div id="quadrado2">
+      
+  <label for="fname">Digite  seu cep:</label>
+<input type="text" id="fname" name="fname"> </input>
+<p id="forma">Escolha a forma de entrega</p>
+
+<p  id="resu">Resumo do Pedido</p>
+<p  id="pedi">Resumo do Pedido</p>
+<p  id="total">total:</p>
+<p  id="valor">valor:</p>
+<button id=paga>ir para pagamento</button>
+<hr id="hr1">
+ <button id=mais>ir para pagamento</button>
+<p id= pag>Formas de pagamentos</p>
+
+<div>
+<div id="miniquadrado"></div>
+<div id="miniquadrado2"></div>
+<div id="miniquadrado3"></div>
+<div id="miniquadrado4"></div>
+<div id="miniquadrado5"></div>
+</div>
+</div>
+
+</body>
+</html>
