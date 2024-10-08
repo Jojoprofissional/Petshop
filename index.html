@@ -20,8 +20,55 @@
     <li><a href="#"><i class="fa fa-shopping-cart"></i> Carrinho</a></li>
     <li><a href="#"><i class="fa fa-map-marker"></i> Localização</a></li>
     <li><a href="#"><i class="fa fa-user"></i> Cadastro/Login</a></li>
+
+  
   </ul>
+
+  
+   
+    <button class="buy-btn" id="mode-tema">Comprar</button>
+  
 </nav>
+<script>
+  document.querySelector('#mode-tema').addEventListener('click', () => {
+    const body = document.querySelector('body');
+    const button = document.querySelector('#mode-tema');
+    
+    body.classList.toggle('dark-mode');
+    
+    if (body.classList.contains('dark-mode')) {
+      button.textContent = 'Para o Light Mode';
+    } else {
+      button.textContent = 'Para o Dark Mode';
+    }
+  });
+</script>
+<style>
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+button.dark-mode {
+  background-color: #555;
+  color: #f0f0f0;
+}
+
+button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+</style>
 
      
           <div class="banner" id="quadradomaluco" >
@@ -59,6 +106,7 @@
   <p>bolsa boa pra cachorro</p>
   <button class="buy-btn">Comprar</button>
 </div>
+
 
 
 
